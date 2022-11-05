@@ -1,0 +1,17 @@
+<div>
+    <button routerLink="/nuevo-usuario">Agregar</button>
+    <div *ngFor="let usuario of usuarios">
+        <div>
+            <h1>Nombre usuario: {{usuario.nombre}}</h1>
+            <h1>Estado: {{usuario.activo}}</h1>
+        </div>
+        <ng-container *ngIf="usuario.activo ==='Inactivo'"  >
+            <button (click)="enable(usuario.nombre)">Habilitar</button>
+        </ng-container>
+        <ng-container *ngIf="usuario.activo ==='Activo'" >
+            <button (click)="disabled(usuario.nombre)">Deshabilitar</button>
+        </ng-container>
+            <button routerLink="/user/{{usuario.id}}">Detail</button>
+            
+    </div>
+</div>

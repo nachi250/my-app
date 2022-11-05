@@ -1,0 +1,28 @@
+<form (ngSubmit)="enviar(f)" #f="ngForm">
+
+<mat-form-field appearance="fill">
+  <mat-label>Nombre</mat-label>
+  <input matInput>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+    <mat-label>Apellido</mat-label>
+    <input matInput required>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+    <mat-label>Direccion</mat-label>
+    <input matInput>
+</mat-form-field>
+
+<input-error-state-matcher-example></input-error-state-matcher-example>
+
+<mat-radio-group aria-label="Select an option">
+    <mat-radio-button value="1">Masculino</mat-radio-button>
+    <mat-radio-button value="2">Femenino</mat-radio-button>
+</mat-radio-group>
+
+<button mat-button color="primary">Enviar</button>
+
+</form>
+

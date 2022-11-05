@@ -1,0 +1,9 @@
+<div class="producto">
+    <div>
+        <span>{{nombre}}</span>
+        <span>{{cantidad}}</span>
+        <div><button (click)="comprar()">Comprar</button></div>
+    </div>
+    <ng-content select[dinamico1]></ng-content>
+    <ng-content select[dinamico2]></ng-content>
+</div>

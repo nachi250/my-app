@@ -1,0 +1,28 @@
+
+<div>
+    <div>
+        <label for="">Nombre</label>
+        <input type="text" class="" [(ngModel)]="nombre">
+        <span> Nombre Ingresado {{nombre}}</span>
+    </div>
+    <button (click)="guardar()">Guardar</button>
+</div>
+
+<div>
+    <span>{{saludo}}</span>
+    <span [innerHTML]="saludo"></span>
+</div>
+
+<app-producto 
+[nombre]="nombreProducto" 
+[cantidad]="cantidadProducto" 
+(comprarEvento)="eventoComprar($event)">
+</app-producto>
+
+
+
+
+
+
+
+

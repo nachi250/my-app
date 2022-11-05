@@ -1,0 +1,8 @@
+<div>
+    <label>Add an user: <input #newUser [(ngModel)]="nombre"></label>
+    <span>{{nombre}}</span>
+    <button (click)="addNewUser(newUser.value)">Add to parent's list</button>
+
+</div>
+<button routerLink="/home">Volver</button>
+

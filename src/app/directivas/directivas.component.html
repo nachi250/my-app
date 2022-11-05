@@ -1,0 +1,56 @@
+
+
+<mat-form-field appearance="fill">
+    <mat-label>{{nombre}}</mat-label>
+    <input matInput [(ngModel)]="nombre">
+    <small *ngIf="nombre.length === 0">Este elemento es requerido</small>
+  </mat-form-field>
+  <div>Nombre: {{nombre}}</div>
+
+  <mat-form-field appearance="fill">
+    <mat-label>{{codPostal}}</mat-label>
+    <input matInput [(ngModel)]="codPostal">
+    <ng-container *ngIf="!codPostal; else otroTemplate"> 
+      <div>Este valor es requerido</div> 
+    </ng-container>
+    <ng-template #otroTemplate>
+      <div>Este valor es válido</div>
+    </ng-template>
+  </mat-form-field>
+  <div>Codigo Postal: {{codPostal}}</div>
+
+<div>
+  <label for="password">Password</label>
+  <input type="password" [(ngModel)]="password">
+  <div>
+    {{password}}
+  </div>
+  <div [ngSwitch]="tipoErrorPass">
+    <small *ngSwitchCase="'requerido'"> Requerido</small>
+    <small *ngSwitchCase="'longitud'">Longitud</small>
+    <small *ngSwitchCase="'numero'">numero</small>
+  </div>
+</div>
+
+<mat-form-field appearance="fill">
+  <mat-label>{{codPostal}}</mat-label>
+  <input matInput [(ngModel)]="codPostal">
+  <small [ngStyle]="{'color': !codPostal? 'red' : 'green'}">Codigo postal</small>
+
+</mat-form-field> 
+
+<button (click)="guardar()" type="submit">Guardar</button>
+
+<div>
+  <ul>
+    <li *ngFor="let usuario of usuarios">
+      Nombre: {{usuario.nombre}}
+      Cod Postal: {{usuario.codPostal}}
+      Password: {{usuario.password}}
+    </li>
+  </ul>
+</div>
+
+
+
+  

@@ -1,0 +1,12 @@
+<p>user-detail works!</p>
+
+<button routerLink="/home">Volver</button>
+
+<div *ngFor="let user of usuario">
+    <div>Nombre: {{user.nombre | uppercase}}</div>
+    <div>Id: {{user.id}}</div>
+    <div>Activo: {{user.activo}}</div>
+    <div>Dni: {{user.dni}}</div>
+</div>
+
+<span>Resultado asincrono: {{resultAsync | async}}</span>

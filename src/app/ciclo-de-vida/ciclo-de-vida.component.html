@@ -1,0 +1,29 @@
+<div>
+    <div>
+        <label for="producto">Producto</label>
+        <input type="text" name="" [(ngModel)]="nombre">
+        <span>{{nombre}}</span>
+    </div>
+
+    <div>
+        <label for="producto">Cantidad</label>
+        <input type="text" name="" [(ngModel)]="cantidad">
+        <span>{{cantidad}}</span>
+    </div>
+    <button (click)="agregarProducto()">Guardar</button>
+    <button (click)="modificarPrimerProducto()">Modificar</button>
+    <button (click)="eliminarPrimerProducto()">Eliminar</button>
+</div>
+
+<div>
+    <h1>Lista de productos</h1>
+    <app-ciclo-producto
+    *ngFor="let producto of productos"
+    [nombre]="producto.nombre"
+    [cantidad]="producto.cantidad"
+    >
+    <span dinamico1>Dinamico 1</span>
+    <span dinamico2>Dinamico 2</span>
+</app-ciclo-producto>
+
+</div>
