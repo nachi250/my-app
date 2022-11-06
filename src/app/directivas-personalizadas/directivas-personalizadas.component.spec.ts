@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DirectovasPersonalizadasComponent } from './directovas-personalizadas.component';
+import { DirectivasPersonalizadasComponent } from './directivas-personalizadas.component';
 
 describe('DirectovasPersonalizadasComponent', () => {
-  let component: DirectovasPersonalizadasComponent;
-  let fixture: ComponentFixture<DirectovasPersonalizadasComponent>;
+  let component: DirectivasPersonalizadasComponent;
+  let fixture: ComponentFixture<DirectivasPersonalizadasComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DirectovasPersonalizadasComponent ]
+      declarations: [ DirectivasPersonalizadasComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DirectovasPersonalizadasComponent);
+    fixture = TestBed.createComponent(DirectivasPersonalizadasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -27,10 +27,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProductoComponent } from './components/producto/producto.component';
 import { CicloDeVidaComponent } from './ciclo-de-vida/ciclo-de-vida.component';
 import { CicloProductoComponent } from './ciclo-de-vida/ciclo-producto/ciclo-producto.component';
-import { DirectovasPersonalizadasComponent } from './directovas-personalizadas/directovas-personalizadas.component';
+import { DirectivasPersonalizadasComponent } from './directivas-personalizadas/directivas-personalizadas.component';
 
-import { ResaltarDosDirective } from './directovas-personalizadas/resaltar-dos.directive';
-import { ResaltarHostListenerDirective } from './directovas-personalizadas/resaltar-host-listener.directive';
+import { ResaltarDosDirective } from './directivas-personalizadas/resaltar-dos.directive';
+import { ResaltarHostListenerDirective } from './directivas-personalizadas/resaltar-host-listener.directive';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { NuevoUsuarioComponent } from './nuevo-usuario/nuevo-usuario.component';
 
@@ -63,7 +63,7 @@ import { ProfileEditorComponent } from './profile-editor/profile-editor.componen
     ProductoComponent,
     CicloDeVidaComponent,
     CicloProductoComponent,
-    DirectovasPersonalizadasComponent,
+    DirectivasPersonalizadasComponent,
     ResaltarDosDirective,
     ResaltarHostListenerDirective,
     UsuarioComponent,
